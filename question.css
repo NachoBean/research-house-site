@@ -22,6 +22,18 @@
 .crossroads { margin-bottom: 4.5rem; }
 .crossroads ul { margin-bottom: 0; padding-left: 1.2rem; }
 .crossroads li { margin: .5rem 0; }
+.research-map { padding: 0 0 4.5rem; }
+.research-map .section-heading { margin-bottom: 1.5rem; }
+.research-map .section-heading p:last-child { max-width: 760px; color: var(--ink-soft); }
+.comparison-scroll { overflow-x: auto; border: 1px solid var(--line); background: var(--white); }
+.comparison-scroll:focus { outline: 3px solid var(--gold); outline-offset: 3px; }
+.research-comparison { width: 100%; min-width: 980px; border-collapse: collapse; font-size: .9rem; }
+.research-comparison th, .research-comparison td { padding: 1rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.research-comparison thead th { background: var(--blue-dark); color: var(--white); font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; }
+.research-comparison tbody th { width: 150px; color: var(--blue-dark); font-family: Georgia, "Times New Roman", serif; font-size: 1.05rem; font-weight: 600; }
+.research-comparison tbody th a { color: inherit; text-underline-offset: 3px; }
+.research-comparison tbody tr:last-child th, .research-comparison tbody tr:last-child td { border-bottom: 0; }
+.research-comparison th:last-child, .research-comparison td:last-child { border-right: 0; }
 .example-bridge { max-width: 860px; margin: 0 auto; padding: 1rem 0 5rem; text-align: center; }
 .example-bridge p:not(.eyebrow) { max-width: 680px; margin: 1rem auto 1.5rem; color: var(--ink-soft); }
 
