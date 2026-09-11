@@ -1,0 +1,37 @@
+.question-page { max-width: var(--max); }
+.question-header { max-width: 900px; padding: 5rem 0 4rem; }
+.question-header h1 { font-size: clamp(3rem, 7vw, 6.5rem); }
+.observation-first, .crossroads { display: grid; grid-template-columns: .8fr 1.2fr; gap: 5rem; padding: 3rem; background: var(--blue-dark); color: var(--white); }
+.observation-first h2, .crossroads h2 { margin: 0; }
+.observation-first > p, .crossroads > div:last-child { margin: 0; color: #d5e4fa; }
+.observation-first .section-number, .crossroads .section-number { color: #9fc5ff; }
+.perspective-section { padding: 4.5rem 0; }
+.perspective-section .section-heading p:last-child { color: var(--ink-soft); }
+.perspective-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.perspective-card { display: flex; flex-direction: column; min-height: 330px; padding: 1.7rem; border: 1px solid var(--line); background: var(--white); text-decoration: none; }
+.perspective-card.available { color: var(--white); background: var(--blue-dark); border-color: var(--blue-dark); }
+.perspective-card.available p, .perspective-card.available dd { color: #d5e4fa; }
+.perspective-card.available .status { color: #9fc5ff; }
+.perspective-card p { color: var(--ink-soft); }
+.perspective-card dl { margin: auto 0 0; }
+.perspective-card dl div { padding: .55rem 0; border-top: 1px solid rgba(216, 224, 235, .35); }
+.perspective-card dt { color: var(--gold); font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.perspective-card dd { margin: .15rem 0 0; color: var(--ink-soft); font-size: .88rem; }
+.perspective-card .card-link { margin-top: 1.3rem; }
+.perspective-card.available:hover, .perspective-card.available:focus { transform: translateY(-3px); box-shadow: 0 16px 38px rgba(11, 47, 104, .22); }
+.crossroads { margin-bottom: 4.5rem; }
+.crossroads ul { margin-bottom: 0; padding-left: 1.2rem; }
+.crossroads li { margin: .5rem 0; }
+.example-bridge { max-width: 860px; margin: 0 auto; padding: 1rem 0 5rem; text-align: center; }
+.example-bridge p:not(.eyebrow) { max-width: 680px; margin: 1rem auto 1.5rem; color: var(--ink-soft); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .perspective-card.available { transition: transform .2s ease, box-shadow .2s ease; }
+}
+
+@media (max-width: 780px) {
+  .question-header { padding-top: 3rem; }
+  .observation-first, .crossroads, .perspective-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .observation-first, .crossroads { padding: 1.5rem; }
+  .perspective-card { min-height: 280px; }
+}
